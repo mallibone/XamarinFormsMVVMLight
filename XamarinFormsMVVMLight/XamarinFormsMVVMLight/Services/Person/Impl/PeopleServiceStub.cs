@@ -12,7 +12,7 @@ namespace XamarinFormsMVVMLight.Services.Person.Impl
             return Task.Run(() => GeneratePeople(numberOfPeopleToGenerate));
         }
 
-        private IEnumerable<Model.Person> GeneratePeople(int personCount)
+        static public IEnumerable<Model.Person> GeneratePeople(int personCount)
         {
             var people = new List<Model.Person>(personCount);
 
