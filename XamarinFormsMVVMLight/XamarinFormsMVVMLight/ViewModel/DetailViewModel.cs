@@ -11,7 +11,7 @@ namespace XamarinFormsMVVMLight.ViewModel
         public DetailViewModel()
         {
             ClickMeCallBackAction = () => { };
-            ClickMeCommand = new RelayCommand(ClickMeCallBackAction);
+            ClickMeCommand = new RelayCommand(() => ClickMeCallBackAction());
         }
 
         public ICommand ClickMeCommand { get; set; }

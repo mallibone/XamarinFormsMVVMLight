@@ -22,7 +22,7 @@ namespace XamarinFormsMVVMLight
 
         private void ListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Navigation.PushAsync(new DetailPage((Person) PeopleListView.SelectedItem));
+            Navigation.PushModalAsync(new DetailPage((Person) PeopleListView.SelectedItem));
         }
     }
 }
